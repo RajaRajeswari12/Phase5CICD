@@ -14,7 +14,7 @@ import com.example.springSimplilearn.springDevOps.Entity.Employee;
 import com.example.springSimplilearn.springDevOps.service.EmployeeService;
 
 @RestController
-@RequestMapping("/springbootapp")
+
 public class EmployeeController {
 	
 	@Autowired

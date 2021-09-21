@@ -26,7 +26,7 @@ class SpringDevOpsApplicationTests {
 	    private MockMvc mockMvc;
 	    @Test
 	    public void getsAllEmployees() throws Exception {
-	        mockMvc.perform(MockMvcRequestBuilders.get("/springbootapp/employee")
+	        mockMvc.perform(MockMvcRequestBuilders.get("/employee")
 	                .accept(MediaType.APPLICATION_JSON))
 	                .andExpect(status().isOk())
 	                .andReturn();
@@ -35,7 +35,7 @@ class SpringDevOpsApplicationTests {
 	    @Test
 	    public void addsNewEmployee() throws Exception {
 	        String newEmployee = "{\"empId\":14,\"name\":\"Raji\",\"city\":\"Bangalore\" }";
-	        mockMvc.perform(MockMvcRequestBuilders.post("/springbootapp/employee")
+	        mockMvc.perform(MockMvcRequestBuilders.post("/employee")
 	                .contentType(MediaType.APPLICATION_JSON)
 	                .content(newEmployee)
 	                .accept(MediaType.APPLICATION_JSON))

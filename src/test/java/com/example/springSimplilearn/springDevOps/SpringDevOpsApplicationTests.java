@@ -34,7 +34,7 @@ class SpringDevOpsApplicationTests {
 
 	    @Test
 	    public void addsNewEmployee() throws Exception {
-	        String newEmployee = "{\"empI\":10,\"name\":\"Raji\",\"city\":\"Bangalore\" }";
+	        String newEmployee = "{\"empId\":12,\"name\":\"Raji\",\"city\":\"Bangalore\" }";
 	        mockMvc.perform(MockMvcRequestBuilders.post("/employee")
 	                .contentType(MediaType.APPLICATION_JSON)
 	                .content(newEmployee)
